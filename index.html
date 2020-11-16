@@ -1,1 +1,396 @@
+<!DOCTYPE html>
+<html>
+<title>Temecula Tech Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://github.com/nolant108/TemeculaTechWeb/blob/master/the-benefits-and-risks-of-cloud-computing-5952b32447c6a.jpg?raw=true");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+  
+  
+  
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-center w3-bar w3-red w3-card">
+    <a >Due to COVID-19: All techs & customers that are present, will be required to wear a mask when attending.</a>
+    </div>
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Temecula Technology Solutions</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK<
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black w3-text-bold" style="padding:48px">
+    <span class="w3-jumbo w3-center">Technology Support for You!</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Technology Support for You!</span><br>
+    <p><a href="#about" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa w3-hover-opacity">
+    <a href="https://instagram.com/temecula_technology">Instagram</a>
+    </i>
+    
+    <i class="fa w3-hover-opacity">
+    <a href="https://discord.gg/JufCdSc">Discord</a>
+    </i>
+    </div>
+    
+    
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>We are very responsive in our mannor to help repair & fix your technology items.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Our tech gurus are constantly learning new things, and have a passion for technology repairs.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>We design our own software to help us diagnose your technology problems.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>We have a dedicated support team to answer your questions and conserns in a timely manner.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://github.com/nolant108/TemeculaTechWeb/blob/master/IMG_7420.jpg?raw=true" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Nolan Trapp</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Nolan is a High School Student with a Ham Radio certification, he also graduated as top scholor in his Computer/Computer Science class.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class=""></i><a href="mailto: nolan.trapp@temeculatechnology.com">Contact</a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+   
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">4+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://raw.githubusercontent.com/nolant108/TemeculaTechWeb/master/hard-disk-failures.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hard Drive Repair">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://github.com/nolant108/TemeculaTechWeb/blob/master/iphone-repair.jpg?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Iphone Repair">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://github.com/nolant108/TemeculaTechWeb/blob/master/images.jpg?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Computer Repair">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://github.com/nolant108/TemeculaTechWeb/blob/master/server-image-1.png?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Server Penatration Testing">
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+   <p class="w3-center w3-Large">Who We Partner With</p>
+    <img src="https://github.com/nolant108/TemeculaTechWeb/blob/master/AWS-Featured.png?raw=true" style="width:25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Amazon AWS"> 
+    <img src="https://enterprise.github.com/images/opengraph.png" style="width:27%" onclick="onClick(this)" class="w3-hover-opacity" alt="Github Enterprise Server">
+        <img src="https://github.com/nolant108/TemeculaTechWeb/blob/master/logo-microsoft-2ae66d4033f4624cc4d1a9ebebf547a5a30fed4280145e22233d2d5433e43a76.jpg?raw=true" style="width:43%" onclick="onClick(this)" class="w3-hover-opacity" alt="Microsoft Azure">
+  </div>
+  
+
+ 
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p><b>Tech Repair:</b> If you have a hardware or software problem, we will send someone to your place, and repair that device.</p>
+      <p><b><b>I.T. Specialist:</b></b> If you have any tech problems that need fixing our tech gurus will try to fix them for you. If you also have a system management problem(etc: WiFi), we will fix them.</p>
+      <p><b>Pen Testing:</b> We will try to break into and crash your cloud systems. Then give you a writeup on how to fix the vulnerability.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Hardware/Software Repair</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:50%">50%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>I.T. Specialist</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:35%">35%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Penatration Testing</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:15%">15%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-48">I.T. Specialist</li>
+        <li class="w3-padding-16"><b>Solve</b> Technical Problems</li>
+        <li class="w3-padding-16"><b>Computer</b> System Management</li>
+        <li class="w3-padding-16"><b>30</b> Day Money Back Guarantee</li>
+        <li class="w3-padding-16"><b>Endless</b> Phone and Email Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$15</h2>
+          <span class="w3-opacity">per specialist**/1hr</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+    <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Sign Up</a></p>        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-32">Hardware/Software Repair</li>
+        <li class="w3-padding-16"><b>Full</b> Repair</li>
+        <li class="w3-padding-16"><b>Teaching</b> of Software or Hardware</li>
+        <li class="w3-padding-16"><b>30</b> Day Money Back Guarantee</li>
+        <li class="w3-padding-16"><b>Endless</b> Phone and Email Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$30</h2>
+          <span class="w3-opacity">per repair*</span>
+        </li>
+     <li class="w3-light-grey w3-padding-24">
+    <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Sign Up</a></p>        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Penatration Testing</li>
+        <li class="w3-padding-16"><b>Break</b> into Cloud/Server & Computers</li>
+        <li class="w3-padding-16"><b>Full</b> Writeup of Procedures and it's Conclusion</li>
+        <li class="w3-padding-16"><b>30</b> Day Money Back Guarantee</li>
+        <li class="w3-padding-16"><b>Endless</b> Phone and Email Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 150</h2>
+          <span class="w3-opacity">per 2hr/specialist***</span>
+        </li>
+         <li class="w3-light-grey w3-padding-24">
+    <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Sign Up</a></p>        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa w3-hover-opacity">
+    <a href="https://instagram.com/temecula_technology">Instagram</a>
+    </i>
+    
+       <i class="fa w3-hover-opacity">
+    <a href="https://discord.gg/JufCdSc">Discord</a>
+    </i>
+    
+    
+
+  <i> 
+    </div>
+    
+    
+      <div class="w3-xlarge w3-section">
+
+    </i>
+               <a href="https://github.com/Temecula-Technology">
+         <img alt="GitHub" src="https://github.com/nolant108/TemeculaTechWeb/blob/master/GitHub-Mark-Light-120px-plus.png?raw=true" style="width:6%">
+    </a>
+    <p>
+        
+    </p>
+       <a href="https://play.google.com/store/apps/details?id=com.nolantrapp.temeculatech">
+         <img alt="Play" src="https://github.com/nolant108/TemeculaTechWeb/blob/master/google-play-badge.png?raw=true" style="width:15%">
+    </a>
+   </div>  
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div href=https://www.blockchain.com/btc/payment_request?address=14Pohn5NmJ4HJtLWyJ1XEzPCB5VYXLi2XH style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn" data-address="14Pohn5NmJ4HJtLWyJ1XEzPCB5VYXLi2XH" data-shared="false">
+  <div class="blockchain stage-begin">
+      <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
+  </div>
+  </div>
+  <div class="blockchain stage-ready">
+      <p align="center">Please Donate To Bitcoin Address: <b>14Pohn5NmJ4HJtLWyJ1XEzPCB5VYXLi2XH</b></p>
+
+	
+	
+	
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  <script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+	popupWindow = window.open(
+		url,'popUpWindow','height=700,width=700,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
+<p><a href="JavaScript:newPopup('https://g.page/temecula-technology/review?gm');">Review Us!</a></p>
+  
+  
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else { 
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</footer>
+</body>
+</html>

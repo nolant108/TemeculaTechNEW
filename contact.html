@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>TTS: Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+            </ul>
+      </nav>
+    </header>
+    <h1>Contact</h1>
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+          <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Mobile Unit in Temecula, US</p>
+          <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1(951)-290-8536</p>
+          <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: tech@temeculatechnology.com</p>
+          <br>
+          
+       
+          <form name="contact" method="POST" data-netlify="true">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+              <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+            <p>
+              <button class="w3-button w3-black" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button>
+            </p>
+          </form>
+      
+      </div>
+  </body>
+</html>
