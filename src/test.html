@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://temeculatechnology.com/.netlify/identity"></script>
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <meta charset="utf-8">
+        <title>Netlify Identity Widget</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <meta name="description" content="Netlify Identity Widget">
+        <meta name="application-name" content="Netlify Identity Widget">
+<style>* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    margin: 0;
+    border-top: 8px solid #0e1e25;
+}
+
+.main {
+    max-width: 800px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 64px;
+}
+
+.header h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #2d3b41;
+    margin: 0;
+}
+
+.header a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.header a:hover,
+.header a:focus {
+    background-color: #E9EBEB;
+}
+
+
+.header h1 {
+    font-weight: 700;
+    font-size: 80px;
+    color: #0e1e25;
+    margin-top: 8px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #a3a9ac;
+    margin-bottom: 8px;
+}
+
+[data-netlify-identity-button] a {
+  display: block;
+  position: relative;
+  width: 100%;
+    max-width: 184px;
+  height: auto;
+  padding: 8px 12px;
+  outline: 0;
+  cursor: pointer;
+  border: 2px solid #007a70;
+  border-radius: 4px;
+  background-color: #00ad9F;
+  color: white;
+  transition: background-color 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+[data-netlify-identity-button] a:hover,
+[data-netlify-identity-button] a:focus {
+  background-color: #007a70;
+  text-decoration: none;
+}
+
+[data-netlify-identity-menu] ul {
+    display: flex;
+}
+
+[data-netlify-identity-menu] li:first-child {
+    margin-right: 16px;
+}
+
+[data-netlify-identity-menu] li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+[data-netlify-identity-menu] a {
+    display: block;
+    position: relative;
+    width: 192px;
+    height: 24px;
+    padding: 8px;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #007a70;
+    border-radius: 4px;
+    background-color: #00ad9F;
+    color: white;
+    transition: background-color 0.2s ease;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+[data-netlify-identity-menu] a:hover,
+[data-netlify-identity-menu] a:focus {
+  background-color: #007a70;
+  text-decoration: none;
+}
+
+.netlify-identity-user-details {
+    display: block;
+}
+
+.netlify-identity-user {
+    font-weight: 500;
+    color: #2d3b41;
+    display: block;
+    margin-top: 8px;
+}
+
+.hands-on-area {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.single-button {
+    flex-grow: 1;
+    margin-right: 104px;
+    margin-bottom: 40px;
+}
+
+.multiple-buttons {
+    flex-grow: 2;
+}
+
+.single-button div {
+    margin-top: 8px;
+}
+
+.multiple-buttons div {
+    margin-top: 8px;
+}
+
+.call-out svg {
+    display: block;
+    margin-left: 40px;
+    width: 90%;
+    max-width: 420px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 32px;
+    margin-top: 104px;
+}
+
+@media (max-width: 880px) {
+    .main {
+        padding: 16px;
+    }
+
+    .header h1 {
+        font-size: 10vw;
+    }
+
+    .hands-on-area {
+        flex-direction: column;
+    }
+
+    [data-netlify-identity-menu] ul {
+        display: flex;
+    flex-direction: column;
+    }
+
+    [data-netlify-identity-menu] li {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .main {
+        padding: 64px 0;
+    }
+    
+    .footer {
+        position: relative;
+        bottom: auto;
+    }
+}
+</style>
+<script>// Bind to events
+netlifyIdentity.on("init", user => console.log(user));
+netlifyIdentity.on("login", user => console.log(user));
+netlifyIdentity.on("logout", () => console.log("Logged out"));
+netlifyIdentity.on("error", err => console.error("Logged out"));
+netlifyIdentity.on("open", () => console.log("Widget opened"));
+netlifyIdentity.on("close", () => console.log("Widget closed"));
+</script>
+</head>
+
+
+<body>
+    <div class="main">
+       <div class="header">
+            <h2>
+                <a href="https://www.netlify.com">Netlify Identity</a>
+            </h2>
+            <h1>Auth widget demo</h1>
+            <div>
+                <div class="hands-on-area">
+                    <div class="single-button">
+                        <span class="label">Single button example:</span>
+                        <div data-netlify-identity-button></div>
+                    </div>
+                    <div class="multiple-buttons">
+                        <span class="label">Multiple buttons example:</span>
+                        <div data-netlify-identity-menu></div>
+                    </div>
+                </div>
+                <div class="call-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="406" height="112" viewBox="0 0 406 112"></svg>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>

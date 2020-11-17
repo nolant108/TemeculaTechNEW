@@ -16,6 +16,9 @@
   background-size: cover;
     }
     </style>
+
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   </head>
   <body>
   <!-- Navbar (sit on top) -->
@@ -46,20 +49,18 @@
     
     
 <div class="botom">
+    
 
-    <div class="login-box">
-  <h1>Login</h1>
-  <div class="textbox">
-    <i class="fas fa-user"></i>
-    <input type="text" placeholder="Username">
-  </div>
+        <!-- Add a menu:
+         Log in / Sign up - when the user is not logged in
+         Username / Log out - when the user is logged in
+        -->
+        <div data-netlify-identity-menu></div>
+      
+        <!-- Add a simpler button:
+          Simple button that will open the modal.
+        -->
+        <div data-netlify-identity-button>Login with Netlify Identity</div>
 
-  <div class="textbox">
-    <i class="fas fa-lock"></i>
-    <input type="password" placeholder="Password">
-  </div>
-
-  <input type="button" class="btn" value="Sign in">
-</div>
   </body>
   </html>
