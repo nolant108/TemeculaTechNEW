@@ -46,18 +46,35 @@
       </div>
   </div>
 
-    
+  
+
+  
     
     <div class="w3-container" style="padding:400px 40px" id="login">
       <div class="w3-center">
 
+            <button>Home
+      <script>
+        auth0 = function(user, context, callback){
+    user.app_metadata = user.app_metadata || {};
+    if (user.app_metadata.roles.indexOf('Customer')){
+      window.location.replace("Private\home.html");
+     }
+     
+    }
+      </script>
+    </button>
+
+
   <button class="w3-button w3-gray w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">
+
+
    
   <div data-netlify-identity-menu></div>
   
   <script>netlifyIdentity.on('login', user => console.log('login', user));</script>
 
-</button>
+
 </div>
 </div>
   </body>
