@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>TTS: Login</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+    import GoTrue from 'gotrue-js'
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -42,15 +44,23 @@
       </div>
     </div>
     
-    <div class="w3-middle">
-  <div class="w3-center">
-  <script>localStorage.removeItem('https://temeculatechnology.com/.netlify/identity');</script>
-  <button class="w3-button w3-gray w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">
-  <div data-netlify-identity-menu></div>
-      </div> 
-    </div>  
-</button>
-</div>
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
 
+        
+     
+      <form class="identity-form-signup" method="POST" action="/">
+        <h2>Sign up</h2>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Sign up">
+      </form>
+    
+    </div>
   </body>
   </html>
