@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>TTS: Login</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -17,50 +18,19 @@
     }
     </style>
 
-<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ 
 
   </head>
   <body>
-  <!-- Navbar (sit on top) -->
-
-  <div class="w3-top">
-    <div class="w3-center w3-bar w3-red w3-card">
-        <a >Due to COVID-19: All techs & customers that are present, will be required to wear a mask when attending.</a>
-        </div>
-      <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="#home" class="w3-bar-item w3-button w3-wide">Temecula Technology Solutions</a>
-        <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
-            <div class="w3-right w3-hide-small">
-                <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
-                <a href="index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-                <a href="index.html#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-                <a href="index.html#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-                <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-                <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
-          
-              </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
     
     
 <div class="botom">
-    
-
-        <!-- Add a menu:
-         Log in / Sign up - when the user is not logged in
-         Username / Log out - when the user is logged in
-        -->
-        <div data-netlify-identity-menu></div>
-      
-        <!-- Add a simpler button:
-          Simple button that will open the modal.
-        -->
-        <div data-netlify-identity-button>Login with Netlify Identity</div>
+  <script>localStorage.removeItem('https://temeculatechnology.com/.netlify/identity');</script>
+  <div data-netlify-identity-menu></div>
+  <div data-netlify-identity-button>Sign up / Log in</div>
+      </div>   
 
   </body>
   </html>
