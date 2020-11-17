@@ -67,8 +67,8 @@
   <button>Home
     <script>
       auth0 = function(user, context, callback){
-  user.app_metadata = user.app_metadata || {};
-  if (user.app_metadata.roles.indexOf('Customer')){
+    userMD = user.app_metadata || {};
+    if (userMD.roles.indexOf('Customer')){
     <meta http-equiv = "refresh" content = "2; url = https://backup.temeculatechnology.com/private/home.html" />     }
    
   }
